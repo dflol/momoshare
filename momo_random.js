@@ -72,7 +72,7 @@ async function MM() {
 /**
  * 请求接口
  */
- async function getthisIP(timeout = 3 * 1000) {
+ async function getthisIP(timeout = 3 * 100) {
     return new Promise((resolve) => {
 		let url = {
 			url: 'https://api.ipify.org/?format=json',
@@ -96,7 +96,7 @@ async function MM() {
  }
 
  //每日网抑云
- function wyy(timeout = 3 * 1000) {
+ function wyy(timeout = 3 * 100) {
      return new Promise((resolve) => {
          let url = {
              url: `https://keai.icu/apiwyy/api`
@@ -116,7 +116,7 @@ async function MM() {
  }
  
  //#endregion
- async function addLike(timeout = 3 * 1000) {
+ async function addLike(timeout = 3 * 100) {
 	return new Promise((resolve) => {
 		let url = {
 			url: require('./MMSLS').MMSL_random,
